@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Myntra Page</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff3f6c;
+            padding: 15px;
+            border-bottom: 2px solid #e6e6e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffe5e5;
+        }
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff3f6c;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fafafa;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .product h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .product p {
+            color: #777;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .product p:last-of-type {
+            font-size: 18px;
+            color: #ff3f6c;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Myntra</div>
+        <nav>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Home & Living</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>New Arrivals</h1>
+        
+        <div class="products-grid">
+            <div class="product">
+                <img src="t.webp" alt="T-shirt">
+                <h2>Stylish T-shirt</h2>
+                <p>Brand: FashionCo</p>
+                <p>Price: ₹599</p>
+            </div>
+        
+            <div class="product">
+                <img src="jeans.jpg" alt="Jeans">
+                <h2>Comfortable Jeans</h2>
+                <p>Brand: DenimLife</p>
+                <p>Price: ₹1299</p>
+            </div>
+        
+            <div class="product">
+                <img src="sneakers.webp" alt="Sneakers">
+                <h2>Cool Sneakers</h2>
+                <p>Brand: SportyFeet</p>
+                <p>Price: ₹1999</p>
+            </div>
+
+            <div class="product">
+                <img src="girlsfrock.webp" alt="Dress">
+                <h2>Elegant Dress</h2>
+                <p>Brand: ChicStyles</p>
+                <p>Price: ₹1599</p>
+            </div>
+
+            <div class="product">
+                <img src="mensjacket.webp" alt="Jacket">
+                <h2>Leather Jacket</h2>
+                <p>Brand: UrbanEdge</p>
+                <p>Price: ₹2499</p>
+            </div>
+
+            <div class="product">
+                <img src="sunglasses.webp" alt="Sunglasses">
+                <h2>Designer Sunglasses</h2>
+                <p>Brand: SunShield</p>
+                <p>Price: ₹999</p>
+            </div>
+            <div class="product">
+                <img src="gucci.webp" alt="Handbag">
+                <h2>Leather Bag</h2>
+                <p>Brand: Gucci</p>
+                <p>Price: ₹19999</p>
+            </div>
+
+            <div class="product">
+                <img src="cap.webp" alt="Cap">
+                <h2>WearTop Cap</h2>
+                <p>Brand: Adidas</p>
+                <p>Price: ₹1999</p>
+            </div>
+
+            <div class="product">
+                <img src="kc.webp" alt="Kitchen Clothes">
+                <h2>Kitchen Clothes</h2>
+                <p>Brand: Utorn</p>
+                <p>Price: ₹1499</p>
+            </div>
+
+            <div class="product">
+                <img src="blankets.webp" alt="Blankets">
+                <h2>Woolen Blanket</h2>
+                <p>Brand: SunShield</p>
+                <p>Price: ₹999</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Myntra. All rights reserved.</p>
+    </footer>
+</body>
+</html>
